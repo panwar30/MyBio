@@ -1,0 +1,65 @@
+.body1 {
+	border: black thin solid;
+	width: 1000px;
+	height: 1000px;
+	margin: auto;
+}
+
+.header1 {
+	text-align: center;	
+}
+
+.main-content-div{
+	 	width: 500px;
+		height: 250px;
+		border: red thin solid;
+ }
+
+ .main-img-div {
+       width: 200px;
+		height: 250px;
+		margin: auto;
+		border: pink thin solid;
+ }
+ 
+ .main-img{
+	width: 90%;
+    margin:10px 10px 10px;
+}
+ 
+ .middle-div{
+	 	width: 800px;
+		height: 50px;
+		border: green thin solid;
+ }
+
+
+ 
+.ulBox {
+	width: 180px;
+	height: 200px;
+	border: black thin solid;
+	box-shadow: 5px 5px 10px grey; 
+  }
+
+ .Box {
+	width: 800px;
+	height: 100px;
+	align: left;
+	border: red thin solid;
+	box-shadow: 5px 5px 10px grey;
+ }
+ 
+ .bottom-div{
+     width: 800px;
+	height: 300px;
+	border: brown thin solid;
+ }
+ 
+ .btext-div{
+ 
+ }
+ 
+ .bbox-div{
+ 
+ }

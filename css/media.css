@@ -1,0 +1,106 @@
+/* This break-point made compatible with large-size devices such as desktops. 
+The margin provides a better view of the web-page since it does not take up the
+full width of the screen, and thus give aesthetic appeal to the web-page. */
+@media screen and (min-width: 850px) {
+    .container {
+        width: 850px;
+        margin: auto;
+    }
+}
+
+/* This break-point made for compatibility with iPads. */
+@media screen and (max-width: 770px) {
+
+
+    .main-image {
+        width: 100%;
+        float: right;
+        margin: 20px 20px ;
+       
+    }
+
+    .bottom-part-div {
+        width: 25%;
+        float: right;
+    }
+
+  
+
+    .feature-title {
+        width: 100%;
+        font-size: 14px;
+        margin: 4px;
+    }
+
+  
+}
+
+/* This break-point made for compatibility with medium-size devices. */
+@media screen and (max-width:550px) {
+    .title-logo {
+        margin-top: 15px;
+        width: 45px;
+    }
+
+    .title-super {
+        margin: 15px 0 0px 15px;
+        font-size: 40px;
+    }
+
+    .sub-title {
+        font-size: 12px;
+    }
+
+ 
+
+    .main-image {
+        width: 100%;
+        float: left;
+        margin: 0;
+    }
+
+    .bottom-part-div {
+        width: 100%;
+        float: right;
+    }
+
+  
+
+    .feature-title {
+        width: 100%;
+        font-size: 20px;
+        margin: 10px 4px 4px 4px;
+    }
+
+
+   
+}
+
+/* These following break-points made for compatibility with mobile-phones. */
+@media screen and (max-width: 425px) {
+    
+    .title-super {
+        margin-top: 6px;
+        font-size: 30px;
+    }
+
+    .sub-title {
+        font-size: 11px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .title-logo {
+        margin-top: 6px;
+        width: 20px;
+    }
+
+    .title-super {
+        margin-top: 4px;
+        font-size: 20px;
+    }
+
+    .sub-title {
+        font-size: 10px;
+    }
+}
