@@ -28,6 +28,7 @@
 }
  
  .middle-div{
+	       margin:200px 10px 100px;
 	 	width: 800px;
 		height: 50px;
 		border: green thin solid;
@@ -54,6 +55,7 @@
      width: 800px;
 	height: 300px;
 	border: brown thin solid;
+	      margin:20px 10px 20px;
  }
  
  .btext-div{
