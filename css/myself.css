@@ -1,7 +1,7 @@
 .body1 {
 	border: black thin solid;
 	width: 100%;
-	height: 1000px;
+	
 	padding: 50px;
 }
 
@@ -58,10 +58,3 @@
 	      margin:20px 10px 20px;
  }
  
- .btext-div{
- 
- }
- 
- .bbox-div{
- 
- }
