@@ -1,4 +1,4 @@
-<DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -14,18 +14,51 @@
 <script src="js/bootstrap.min.js" ></script>
 
 <title>MySelf</title>
-</head>
 
-<body class='container body1 '>
-	
+</head>
 	
 		<header class="row">
 			<h1 class="col-md-12 header1" style='color:grey'>Biodata</h1>
+			
+		<!--  	<h5 style="text-align: right; ">Time: </h5>
+			<p id='demo' style="text-align: right; "></p>
+			
+			<h5 style="text-align: left; ">Date: </h5>
+			<p id='demo2' style="text-align: left; "></p>  
+	    -->	
+			<div class="row">
+			  
+			      <span class="col-md-6" style='color: green;'>Date: <span id="demo"></span></span>
+			      <span class="col-md-6" style='color: red; text-align: center;'>Time: <span id="demo2" ></span></span>
+			
+			</div>
+			
+			<script type="text/javascript">	    
+			    function startTime() {
+			        var today = new Date();
+			        document.getElementById('demo').innerHTML = today;
+	                 var h = today.getHours();
+			        var m = today.getMinutes();
+			        var s = today.getSeconds();
+			        m = checkTime(m);
+			        s = checkTime(s);
+			        document.getElementById('demo2').innerHTML =
+			        h + ":" + m + ":" + s;
+			        var t = setTimeout(startTime, 500);
+			    }
+			    function checkTime(i) {
+			        if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+			        return i;
+			    }
+			    		 
+			</script>
 		</header>
-		
+
+   	 <body class='container body1 ' onload="startTime()" background="images/background.png">	
+   	 
 	    <div class="row">
 		  <div class="col-md-8 col-sm-7 col-xs-6" style="float: left; margin:20px; color: blue;">		
-				<span class="col-md-2 col-sm-2 col-xs-2">Name: </span><span class="col-md-7 col-sm-7 col-xs-7">Aviral</span> <br>
+				<span class="col-md-2 col-sm-2 col-xs-2">Name: </span><span id="idName" class="col-md-7 col-sm-7 col-xs-7">Aviral</span> <br>
 				<span class="col-md-2 col-sm-2 col-xs-2">Age: </span><span class="col-md-7 col-sm-7 col-xs-7">30</span>       <br>
 				<span class="col-md-2 col-sm-2 col-xs-2">Department: </span><span class="col-md-7 col-sm-7 col-xs-7">Central Computer Centre</span> <br>
 				<span class="col-md-2 col-sm-2 col-xs-2">Residence: </span><span class="col-md-7 col-sm-7 col-xs-7">#246, Sector-1, Ukkunagaram, Visakhapatnam </span>
@@ -37,7 +70,7 @@
 			</div>
 		</div>
 	   </div>
-		
+	
 	 <div class='row' style="margin: 20px">
 			<section class="col-md-12  col-sm-12 col-xs-12" style="float: right; color: orange;">
 			   <span class="col-md-2 col-sm-5 col-xs-10" >Intent: </span><span class="col-md-10 col-sm-5 col-xs-10">To become a capable, responsible and successful person. </span> <hr>
@@ -45,20 +78,18 @@
 		</div>
 		
 		  	
-			<div class="col-md-3 col-sm-6 col-xs-12" style="color: brown;">	
+			<div   class="col-md-3 col-sm-6 col-xs-12 " style="color: brown;">	
 			<h5  style='text-align: center;'>Strength</h5>
-				<ul class="col-xs-12 ulBox"  style='text-align: center; vertical-align:middle;'>
-					<li>Hardworking</li>
-					<li>Persistent</li>
+				<ul id='ul1' class="col-xs-12 ulBox"  style='text-align: center;  background-color: orange;'>
+
 				</ul>
 			</div>
 	        	
 	
 			<div class="col-md-3 col-sm-6 col-xs-12" style=" color: red;">
 			<h5  style='text-align: center;'>Weakness</h5>
-				<ul class="col-xs-12 ulBox" style='text-align: center; vertical-align:middle;'>
-					<li>Problem</li>
-					<li>Nostalgic</li>
+				<ul id='ul2'  class="col-xs-12 ulBox" style='text-align: center; background-color: dimGray;'>
+					
 				</ul>
 			</div>
 			
@@ -66,9 +97,8 @@
 		
 			<div class="col-xs-12 col-sm-6 col-md-3" style=" color: grey;">
 			<h5 style='text-align: center;'>Opportunity</h5>
-				<ul class="col-xs-12 ulBox" style='text-align: center; vertical-align:middle;'>
-					<li>Abundant Resources</li>
-					<li>Good Work Culture</li>
+				<ul id='ul3'  class="col-xs-12 ulBox" style='text-align: center; background-color: greenYellow;'>
+				
 				</ul>
 			</div>
 		
@@ -76,19 +106,17 @@
 		
 			<div class="col-md-3  col-sm-6 col-xs-12" style=" color: olive;">
 			<h5 style='text-align: center;'>Threat</h5>
-				<ul class="col-xs-12 ulBox" style='text-align: center; vertical-align:middle;'>
-					<li>Cutoff from relatives</li>
-					<li>Local language problem</li>
+				<ul id='ul4'  class="col-xs-12 ulBox" style='text-align: center; background-color:pink; '>
+					
 				</ul>
 			</div>
-		</div>	
-		
+			
 		
   
 			
 			  <div class="row" style="margin: 20px;">
 			    <div class='col-md-6 col-sm-6 col-xs-12' style='padding: 50px 50px; color:red; font:italic; '>Where you want to see yourself after 5 years :	</div>
-			 	<div class='col-md-6 col-sm-6 col-xs-12' style='padding: 50px 50px; color:green;font: small-caps;'>  Want to see myself enjoying life. </div>			
+			 	<div class='col-md-6 col-sm-6 col-xs-12' style='padding: 50px 50px; color:green;font: small-caps;'>  Want to see myself working hard and sincerely in a reputed organization. Also want to enjoy life to the fullest. </div>			
 		      </div>
 		      
 	               <div class='row'></div>
@@ -105,4 +133,7 @@
     
 
 </body>
+
+<script src="js/populateSWOT.js"></script>
+
 </html>
